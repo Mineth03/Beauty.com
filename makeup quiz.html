@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width = device-width , initial -sacle = 1.0 "/>
+    <title>🦋VenusBeauty.com / Makeup Quiz</title>
+    <link rel="stylesheet" href="css/makeup%20quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-welcome-area" class='quiz-welcome-box'>
+            <br>
+            <h1>Makeup Quiz</h1>
+            <h2> Welcome to the Quiz</h2>
+            <p> This Quiz consists of 5 questions.</p>
+            <p> You have 60 seconds to answer.</p>
+            <p> You will get 2 points for each correct answer.</p>
+            <p> You will receive -1 points for incorrect answers. </p>
+            <p> Click the start button to begin.<b> GOOD LUCK!</b></p>
+
+            <button type='button' id="start-btn" class="start-button">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Start</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+        </div>
+    
+        <div class="quiz_makeup">
+            <div class="mak_box">
+                <div class="timer1">Time left: 10 seconds</div>
+                <h2 class="makeup_questions">Which cosmetic product is typically used to even out skin tone and conceal imperfections?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: Mascara</div>
+                    <div class="option" id="B">B: Foundation</div>
+                    <div class="option" id="C">C: Lipstick</div>
+                    <div class="option" id="D">D: Eyeliner</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">
+                    <span>Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                    </path>
+                    </svg>
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer2">Time left: 10 seconds</div>
+                <h2 class="makeup_questions">What type of makeup product is used to add color to the cheeks?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: Eyeshadow</div>
+                    <div class="option" id="B">B: Highlighter</div>
+                    <div class="option" id="C">C: Blush</div>
+                    <div class="option" id="D">D: Concealer</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">
+                    <span>Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                    </path>
+                    </svg>
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer3">Time left: 10 seconds</div>
+                <h2 class="makeup_questions">Which makeup tool is commonly used to apply foundation and blend it seamlessly into the skin?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: Powder puff</div>
+                    <div class="option" id="B">B: Sponge blender</div>
+                    <div class="option" id="C">C: Eyelash curler</div>
+                    <div class="option" id="D">D: Eyebrow brush</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">
+                    <span>Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                    </path>
+                    </svg>
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer4">Time left: 10 seconds</div>
+                <h2 class="makeup_questions">What is the purpose of using primer in makeup application?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: To remove makeup at the end of the day</div>
+                    <div class="option" id="B">B: To moisturize the skin</div>
+                    <div class="option" id="C">C: To set the makeup in place</div>
+                    <div class="option" id="D">D: To create a smooth base for makeup application</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">
+                    <span>Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                    </path>
+                    </svg>
+                  </button>
+            </div>
+            <div class="mak_box">
+                <div class="timer5">Time left: 10 seconds</div>
+                <h2 class="makeup_questions">Which cosmetic product is used to enhance the appearance of eyelashes?</h2>
+                <div class="options">
+                    <div class="option" id="A">A: Lip gloss</div>
+                    <div class="option" id="B">B: Eyebrow pencil</div>
+                    <div class="option" id="C">C: Mascara</div>
+                    <div class="option" id="D">D: Setting spray</div>
+                </div>
+                <button class="answer-btn">
+                    <span>Select Answer</span>
+                  </button>
+                <button class="next-btn">
+                    <span>Next</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z">
+                    </path>
+                    </svg>
+                  </button>
+            </div>
+        </div>
+    
+        <div class="makeup_quiz_result">
+            <h2>You have scored: </h2>
+            <div class="makeup_questions_container1">
+                <div class="makeup_questions">Which cosmetic product is typically used to even out skin tone and conceal imperfections?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: B: Foundation</div>
+            </div>
+            <br>
+            <div class="makeup_questions_container2">
+                <div class="makeup_questions">What type of makeup product is used to add color to the cheeks?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: C: Blush</div>
+            </div>
+            <br>
+            <div class="makeup_questions_container3">
+                <div class="makeup_questions">Which makeup tool is commonly used to apply foundation and blend it seamlessly into the skin?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: B: Sponge blender</div>
+            </div>
+            <br>
+            <div class="makeup_questions_container4">
+                <div class="makeup_questions">What is the purpose of using primer in makeup application?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: D: To create a smooth base for makeup application</div>
+            </div>
+            <br>
+            <div class="makeup_questions_container5">
+                <div class="makeup_questions">Which cosmetic product is used to enhance the appearance of eyelashes?</div>
+                <div class="user_answer"></div>
+                <div class="correct_answer">Correct answer: C: Mascara</div>
+            </div>
+            <br>
+            <button class="retake-btn">Retake Quiz</button>
+            <button class="main-btn">
+                <a href="Main.html" style="text-decoration: none">Main Page</a>
+            </button>
+        </div>
+    </div>
+
+    <p style="text-align: left; font-size: 15px">© Copyright <a style="text-decoration: none; color: saddlebrown" href="Vinethma.html">Vinethma Kodithuwakku</a>. All rights reserved</p>
+
+
+    <script src="javascript/quiz.js"></script>
+</body>
+</html>

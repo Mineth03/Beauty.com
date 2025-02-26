@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦋VenusBeauty.com / Sign Up Form</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body style="background-image: url('Images/signup.jpg')">
+    <form id="signupForm" method="post">
+        <label for="first">First Name :</label><input id="first" type="text" name="first_name" placeholder="First Name" required />
+        <label for="second">Last Name :</label><input id="second" type="text" name="last_name" placeholder="Last Name" required />
+        <label for="gender">Gender :</label><select id="gender" name="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="age">Age :</label><input id="age" type="number" name="age" placeholder="Age" required />
+        <label for="email">Email :</label><input id="email" type="email" name="email" placeholder="Email" required />
+		
+        <details>
+            <summary>Select your preferences:</summary>
+            <fieldset>
+                <legend>Preferences</legend>
+                <ul>
+                    <li>
+                        <label for="hair_styles">Hair Styles</label>
+                        <input type="checkbox" id="hair_styles" name="hair_styles" value="hair_styles" />
+                    </li>
+                    <li>
+                        <label for="face_creams">Face Creams</label>
+                        <input type="checkbox" id="face_creams" name="face_creams" value="face_creams" />
+                    </li>
+                    <li>
+                        <label for="equipments">Equipments</label>
+                        <input type="checkbox" id="equipments" name="equipments" value="equipments" />
+                    </li>
+                    <li>
+                        <label for="cosmetics">Cosmetics</label>
+                        <input type="checkbox" id="cosmetics" name="cosmetics" value="Cosmetics" />
+                    </li>
+                </ul>
+            </fieldset>
+        </details>
+        
+        <a><button type="submit" class="Sbutton">Sign Up</button></a>
+		<button type="reset" class="Rbutton">Reset</button>
+    </form> 
+    
+    <!-- HTML body for JS-->
+    <div id="UserMessage" style="display: none; color: rgb(6, 0, 128);">Dear Anna, thank you for using 
+        Signing Up with us, the recommended results will be shown in a while.
+    </div>
+
+    <!-- Include your JavaScript file -->
+    <script src="javascript/signup.js"></script>
+</body>
+</html>
+
