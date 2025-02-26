@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦋VenusBeauty.com / Checkout</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+<div class="mainscreen">
+    <div class="card">
+        <div class="leftside">
+            <img src="Images/Makeup-Artist.jpg" class="product" alt="Shoes" />
+        </div>
+        <div class="rightside">
+            <form id="checkout-form">
+                <div id="checkout">
+                    <h1>CheckOut</h1>
+                </div>
+                <label>Cardholder Name
+                    <input class="inputbox" name="name" />
+                </label>
+                <label for="card_number">Card Number</label><input class="inputbox" name="card_number" id="card_number" />
+                <label for="card_type">Card Type</label><select class="inputbox" name="card_type" id="card_type">
+                <option value="">--Select a Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Discover Network">RuPay</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="American Express">American Express</option>
+            </select>
+                <div class="expcvv">
+                    <label class="expcvv_text" for="exp_date">Expiry</label><input class="inputbox" name="exp_date" placeholder="dd/mm/yyyy" id="exp_date" />
+                    <label class="expcvv_text2" for="cvv">CVV</label><input class="inputbox" name="cvv" id="cvv" />
+                </div>
+                <label>E-mail address
+                    <input class="inputbox" name="email" />
+                </label>
+                <label>Address
+                    <input class="inputbox" name="address" />
+                </label>
+                <button class="button" onclick="checkout()">Checkout</button>
+                <img src="Images/card.png" alt="card" class="cards">
+            </form>
+            <div id="success-message" style="display: none;">
+                <p class="payment-message">Your Order Placed Successfully!</p>
+                <img src="Images/pay.jpg" id="pay-img" alt="pay">
+                <p id="pop-up-message"></p>
+                <a href="Main.html">
+                    <button type="submit" class="button" style="width: 50%">Click Here To Go The Home Page</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<p style="text-align: left; font-size: 15px">© Copyright <a style="text-decoration: none; color: saddlebrown" href="Mineth.html">Mineth Sandew</a>. All rights reserved</p>
+
+
+<script src="javascript/payment.js"></script>
+
+
+</body>
+</html>

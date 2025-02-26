@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦋VenusBeauty.com / Shopping Cart</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <style>
+        body {
+            padding-top: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="shop">
+    <img id="shop" src="Images/Cart.jpg" alt="shop image">
+    <div class="shop_text">CART</div>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>ITEM</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+    <tfoot>
+    <tr class="total-row">
+        <td colspan="3" class="table-left-align">Enter discount code:</td>
+        <td>
+            <label for="discount-input"></label><input id="discount-input" placeholder="Enter code">
+        </td>
+        <td>
+            <button onclick="applyDiscount()" id="discount-button">Apply</button>
+        </td>
+    </tr>
+    <tr class="total-row">
+        <td colspan="3" class="table-left-align">Total:</td>
+        <td id="cart-total"></td>
+        <td><button onclick="clearCart()" class="remove-button">Clear Cart</button></td>
+    </tr>
+    </tfoot>
+</table>
+
+<div id="payment">
+    <button class="payment" onclick="proceedToPayment()">Place Order</button>
+</div>
+
+<br>
+<br>
+    <div class="description">
+        <div class="left">
+            <img src="Images/delivery.jpg" alt="label">
+        </div>
+        <div class="right" style="background-color: white">
+            <p style="width: 80%; margin-top: 150px">"Step into the New Year with beauty and savings! Embrace the festive spirit with free
+                delivery on all orders from our cosmetic website until the season's end. Explore a world of skincare treasures,
+                luxurious makeup, and beauty essentials, all conveniently delivered to your doorstep at no extra cost. Whether
+                you're indulging in self-care or searching for the perfect gifts, now is the time to shop without hesitation.
+                Don't miss out on this exclusive offer – elevate your beauty routine and make every purchase count as we celebrate
+                the joy of a fresh start together. Shop now and experience the magic of effortless beauty!"
+            </p>
+        </div>
+    </div>
+
+<p style="text-align: left; font-size: 15px">© Copyright <a style="text-decoration: none; color: saddlebrown" href="Mineth.html">Mineth Sandew</a>. All rights reserved</p>
+
+<script src="javascript/cart.js"></script>
+
+</body>
+</html>
