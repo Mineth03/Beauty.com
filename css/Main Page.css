@@ -1,0 +1,551 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(203, 198, 133, 0.11);
+    padding-top: 80px;
+    font-family: Candara, serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: tan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid tan;
+    border-radius: 10px;
+}
+.navbar ul li:hover > ul {
+    display: grid;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+.nav-link {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    color: white;
+    background-color: tan;
+}
+
+.app-icons {
+    display: flex;
+    align-items: center;
+}
+.app-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-icon a:hover {
+    height: 100%;
+    width: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    background-color: white;
+    color: tan;
+}
+
+
+.div1 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-top: 0;
+    position: relative;
+}
+.div11 {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.div11 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s linear;
+}
+.div11:hover img {
+    transform: scale(1.1);
+}
+.img_front {
+    width: 100%;
+    transition: all 0.3s ease;
+    height: 400px;
+}
+.text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.div11:hover .text_overlay {
+    opacity: 1;
+}
+.div11:hover .img_front {
+    filter: blur(5px);
+}
+
+
+.icon_container {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    margin-right: 0;
+}
+.product:hover {
+    transform: scale(1.1);
+}
+.product-name {
+    margin-left: 23px;
+}
+.c img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 80px 0 80px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.c {
+    margin: 0 5% 0 5%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.img_c {
+    transition: transform 0.3s;
+}
+
+.c:hover .img_c {
+    transform: scale(1.2);
+}
+
+.product-name {
+    font-weight: bold;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+
+.div22{
+    background-color: white;
+    border-radius: 20px;
+    border: lightgray;
+}
+#div2{
+    font-family: "Baskerville Old Face";
+    font-size: 20px;
+    margin: 20px;
+    max-width: 800px;
+}
+.quiz {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#quiz_img{
+    border-radius: 20px;
+}
+
+
+.div3{
+    display: flex;
+    background-color: lavender;
+    width: 100%;
+    height: 250px;
+    font-size: 17px;
+}
+
+.right{
+    width: 1000px;
+    height: 200px;
+    margin: 50px;
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sub_div {
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.subscribe_div {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 30% 0 30%;
+}
+.subscribe{
+    vertical-align:middle;
+    transition: all 0.5s;
+
+}
+.subscribe_div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: blur(3px);
+}
+.subscribe_div .subscribe {
+    font-family: Algerian, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient( tan 0%, white 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    padding: 2% 8%;
+    border: 3px solid rgba(80,63,28,0.74);
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+}
+.subscribe:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 0.8;
+}
+#subscribe_{
+    margin-left: 1%;
+}
+.subscribe_div .subscribe:hover {
+    background: linear-gradient(  #918151 0%, tan 100%);
+    color: white;
+}
+.subscribe span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 5%;
+}
+.subscribe:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+#footer{
+    background: linear-gradient(tan 0%, white 100%);
+    color : black;
+    padding: 20px;
+}
+.f1{
+    display: flex;
+    margin: 30px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+#left_side{
+    margin-left: 15%;
+}
+.editor-link{
+    display: inline-flex;
+    font-size: 13px;
+    text-align: right;
+    align-content: end;
+}
+#Right_side{
+    text-align: left;
+}
+#middle_section{
+    text-align: center;
+    font-family: script,cursive;
+    color: #5e052d;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 200px;
+}
+#ff1{
+    font-size: 12px;
+}
+.fa:hover {
+    opacity: 0.5;
+
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: blue;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.footer_sides{
+    flex: 1;
+    margin: 30px;
+}
+form {
+    display: grid;
+    gap: 15px;
+}
+label {
+    font-weight: bold;
+}
+#f2 {
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+button[type="reset"] {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+button[type="reset"]:hover {
+    background-color: #ff9999;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+#contact{
+    color: #ff6666;
+}
+
+.s_product {
+    text-decoration: none;
+    color: black;
+    margin: 20px 20px 50px 20px;
+}
+
+#shop {
+    width: 100%;
+    display: block;
+}
+.shop_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black ;
+}
+.category {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black ;
+}
+.shop {
+    position: relative;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 150px 0 150px;
+}
+
+.product {
+    width: 233px;
+    text-align: center;
+    background-color: white;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom : solid black 1px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: "Segoe MDL2 Assets",serif;
+}
+
+.best_selling {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+}
+
+.add-to-cart-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Tempus Sans ITC", serif;
+}
+.add-to-cart-btn:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.add-to-wishlist-btn {
+    background-color: saddlebrown;
+    color: white;
+    border: none;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Tempus Sans ITC", serif;
+}
+.add-to-wishlist-btn:hover {
+    background-color: rgba(177,136,84,0.41);
+    color: black;
+}
+
+.quantity {
+    width: 116px;
+    height: 30px;
+    text-align: center;
+    margin: 0;
+    font-size: larger;
+    border: solid gray 1px;
+    border-radius: 50px;
+}

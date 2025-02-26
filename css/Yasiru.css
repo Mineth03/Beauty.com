@@ -1,0 +1,45 @@
+body{
+    background-image: url("ed_back.jpg");
+    background-position: center center;
+    font-family: Candara, serif;
+}
+.Page {
+    align-content: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(225,164,36,0.07);
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    margin: 12% 16% 5% 14%;
+    display: flex;
+    width: 70%;
+}
+
+.left_ed {
+    margin-right: 20px;
+}
+
+.left_ed img {
+    border-radius: 20px 0 0 20px;
+    filter: blur(2px);
+    transition: filter 1s ease-in-out;
+    opacity: 1;
+}
+
+.right_ed {
+    text-align: left;
+}
+
+.left_ed.loaded img {
+    filter: none;
+}
+
+.right_ed p {
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+}
+
+.right_ed.loaded p {
+    opacity: 1;
+}

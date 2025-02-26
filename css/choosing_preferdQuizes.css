@@ -1,0 +1,177 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(203, 198, 133, 0.11);
+    padding-top: 70px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: tan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid tan;
+    border-radius: 10px;
+}
+.navbar ul li:hover > ul {
+    display: grid;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+.nav-link {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    background-color: tan;
+}
+
+.app-icons {
+    display: flex;
+    align-items: center;
+}
+.app-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-icon a:hover {
+    height: 100%;
+    width: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    background-color: white;
+    color: tan;
+}
+
+
+.area{
+    border: 4px solid #918151 ;
+    background-color: rgba(222,206,190,0.46);
+    margin: 7px 10% 3px 10%;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+#hh2 {
+    margin-top: 0;
+    text-align: center;
+    background-color: black ;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px grey;
+}
+
+.quiz img {
+    width: 100%;
+    height: 550px;
+}
+
+.quiz-container {
+    display: flex;
+    width: 100%;
+}
+
+.quiz-container .quiz {
+    margin: 0;
+}
+
+.quiz-container .quiz a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.makeup_quiz {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.hair_quiz {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+#div_1{
+    display: flex;
+    background-color: #DEDAF4;
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+}
+
+.right p {
+    text-align: center;
+    margin: 100px;
+    font-size: x-large;
+}
+
+#choice a img:hover {
+    filter: blur(5px);
+}
