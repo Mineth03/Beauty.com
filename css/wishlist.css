@@ -1,0 +1,34 @@
+.description {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#text {
+    position: absolute;
+    font-family: "Tempus Sans ITC", serif;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    font-size: 33px;
+    margin: 70px;
+}
+
+.description img {
+    width: 100%;
+}
+
+li a:hover {
+    background-color: white;
+    color: tan;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+}

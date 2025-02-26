@@ -1,0 +1,97 @@
+body {
+    overflow-x: hidden;
+    background-image: url("Images/signup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Candara, serif;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#UserMessage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+    z-index: 999;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Sbutton {
+    background-color: saddlebrown;
+    color: #fff;
+}
+
+.Rbutton {
+    background-color: darkred;
+    color: #fff;
+    margin-left: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+details {
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
